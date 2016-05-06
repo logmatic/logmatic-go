@@ -1,3 +1,6 @@
+How to use it
+
+```go
 package main
 
 import (
@@ -17,3 +20,4 @@ func main() {
  	log.WithFields(log.Fields{"string": "foo", "int": 1, "float": 1.1 }).Info("My first event from golang")
   
 }
+```
