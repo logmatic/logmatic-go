@@ -17,7 +17,7 @@ package main
 
 import (
   log "github.com/Sirupsen/logrus"
-  "github.com/gpolaert/logmatic-go"
+  "github.com/logmatic/logmatic-go"
 )
 
 func main() {
@@ -37,8 +37,7 @@ The Logrus can be coupled to the LogmaticHook as follow:
 	// instantiate a new Logger with your Logmatic APIKey
   	log.AddHook(logmatic.NewLogmaticHook("<YOUR_API_KEY>"))
   
-Don't forget to replace by the one provided on your Logmatic.io's platform.
-
+	//Don't forget to replace by the one provided on your Logmatic.io's platform.
 	// log an event as usual with logrus
  	log.WithFields(log.Fields{"string": "foo", "int": 1, "float": 1.1 }).Info("My second event from golang to Logmatic")
   
