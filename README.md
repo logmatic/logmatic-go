@@ -27,7 +27,13 @@ func main() {
   	  
 	// log an event as usual with logrus
  	log.WithFields(log.Fields{"string": "foo", "int": 1, "float": 1.1 }).Info("My first event from golang to stdout")
+}
 ```
+You should able to see on the console the following output.
+```json
+{"date":"2016-05-10T15:48:47+02:00","float":1.1,"int":1,"level":"info","message":"My first ssl event from golang to stdout","string":"foo"}
+```
+
 
 
 ### Stream log straight to Logmatic.io
@@ -44,5 +50,9 @@ The Logrus can be coupled to the LogmaticHook as follow:
 }
 ```
 With this configuration, any log coming from your Go's application will be sent to your platform and will fulfill the same format as described in the previous section.
+
+![logmatic.io](docs/io/logmatic.png "Json output")
+
+
 
 Please contact us if you want anything more to be added in this toolset!
