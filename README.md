@@ -51,7 +51,7 @@ The Logrus can be coupled to the LogmaticHook as follow:
 ```
 With this configuration, any log coming from your Go's application will be sent to your platform and will fulfill the same format as described in the previous section.
 
-![logmatic.io](docs/io/logmatic.png "Json output")
+![logmatic.io](docs/i/logmatic.png "Json output")
 
 
 
