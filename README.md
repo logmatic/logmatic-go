@@ -1,5 +1,5 @@
 # logmatic-go
-Link to the Logmatic.io documentation: http://doc.logmatic.io/docs/
+Link to the Logmatic.io documentation: http://doc.logmatic.io/docs/go
 
 Go helpers to send logs to Logmatic.io based on [Logrus lib](http://github.com/Sirupsen/logrus).
 
