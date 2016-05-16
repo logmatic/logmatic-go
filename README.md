@@ -40,7 +40,8 @@ You should able to see on the console the following output.
 ```json
 {
   "date": "2016-05-10T15:48:47+02:00",
-  "float":1.1,"int":1,
+  "float":1.1,
+  "int":1,
   "level":"info",
   "message":"My first ssl event from golang to stdout",
   "string":"foo"
