@@ -1,9 +1,16 @@
 # logmatic-go
 Link to the Logmatic.io documentation: http://doc.logmatic.io/docs/
 
-Go helpers to send logs to Logmatic.io based on [http://github.com/Sirupsen/logrus](Logrus lib).
+Go helpers to send logs to Logmatic.io based on [Logrus lib](http://github.com/Sirupsen/logrus).
 
 It mainly contains a proper JSON formatter and a TLS socket handler that streams logs directly to Logmatic.io - so no need to use a log shipper if you don't wan't to.
+
+## Features
+
+* Use the library as a wrapper for logrus. Everything is forwarded to Logmatic.io as JSON documents.
+* Metas and extra attributes
+* JSON formatter
+* Secure connection to Logmatic (SSL)
 
 ## Usage
 
