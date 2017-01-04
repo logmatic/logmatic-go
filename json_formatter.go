@@ -8,7 +8,7 @@ import (
 )
 
 const defaultTimestampFormat = time.RFC3339
-var markers = [2]string{"sourcecode", "go"}
+var markers = [2]string{"sourcecode", "golang"}
 
 type JSONFormatter struct {
 }
