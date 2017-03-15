@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"time"
 	log "github.com/Sirupsen/logrus"
+	"os"
 )
 
 const defaultTimestampFormat = time.RFC3339
@@ -32,6 +33,11 @@ func (f *JSONFormatter) Format(entry *log.Entry) ([]byte, error) {
 	data["message"] = entry.Message
 	data["level"] = entry.Level.String()
 	data["@marker"] = markers
+	data["appname"] = os.Args[0]
+	h, err := os.Hostname()
+	if err == nil {
+		data["hostname"] = h
+	}
 
 	serialized, err := json.Marshal(data)
 	if err != nil {
