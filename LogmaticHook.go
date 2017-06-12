@@ -3,7 +3,7 @@ package logmatic
 import (
 	"crypto/tls"
 	"fmt"
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 	"os"
 	"errors"
 	"sync"

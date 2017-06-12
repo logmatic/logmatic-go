@@ -23,7 +23,7 @@ To use the JSON formatter, simply associate it.
 package main
 
 import (
-  log "github.com/Sirupsen/logrus"
+  log "github.com/sirupsen/logrus"
   "github.com/logmatic/logmatic-go"
 )
 
